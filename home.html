@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/72d87fb601.js" crossorigin="anonymous"></script>
+    <style>
+      body{background-color: whitesmoke;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+    <link rel="shortcut icon" href="favicone.ico" type="image/x-icon">
+    <title>Banco de Questões - IF's</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand">
+      <img src="iconetcc.png" alt="pasta roxa" style="width: 2rem;">
+     <strong>Banco de Questões - IF's</strong> 
+    </a>            
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fas fa-home" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="cadastquest">
+            <a class="nav-link fas fa-folder-plus" href="index.html">Cadastro de questões</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fas fa-user" href="usuario.html">Meus Resultados</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-dark fas fa-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Referências
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" target="_blank" href="https://portal.ifrn.edu.br/ensino/processos-seletivos/tecnico-integrado/exame-de-selecao">Provas e gabaritos (IFRN)</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://vestibular.brasilescola.uol.com.br/downloads/centro-federal-educacao-tecnologica-pernambuco.htm">Provas e gabaritos (IFPE)</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-right">
+      <a id="userview" class="navbar-brand " href="#">Bem-vindo: </a>
+      <button class="btn-primary rounded-pill fas fa-sign-out-alt" onclick="logout()">Logout!</button>
+    </div>
+    
+  </nav>
+  <div class="container">
+    <div class="row d-flex justify-content-left">
+      <div class="row d-flex d-flex">
+        <div class="col-sm-5 mt-3 ml-3 d-flex justify-content-center"> <p class="h1">Sobre nós:</p></div>
+      </div>
+      <div class="col-md-3 mt-3 d-flex justify-content-center " style="display: none;">
+        <div class="card shadow-sm rounded" style="width: 16rem;">
+          <img src="rennê.jpeg" class="card-img-top" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Rennê Eliezer de Lima R.</h5>
+            <p class="card-text"> Olá, sou aluno do 4º Ano do curso técnico em informática integrado do IFRN Campus Nova Cruz, e um do desenvolvedores desse projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-3 d-flex justify-content-center" >
+        <div class="card shadow-sm rounded" style="width: 16rem;">
+          <img src="image.jpeg" class="card-img-top" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Jucinha Belo Félix</h5>
+            <p class="card-text">Olá, sou aluno do 4º Ano do curso técnico em informática integrado do IFRN Campus Nova Cruz, e um do desenvolvedores desse projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-3 d-flex justify-content-center">
+        <div class="card shadow-sm rounded" style="width: 16rem;">
+          <img src="image.jpeg" class="card-img-top" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Iramar Ferreira</h5>
+            <p class="card-text"> Olá, sou Professor de desenvolvimento de software no IFRN Campus Nova Cruz, formado em Ciência da computação e orientador desse projeto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mt-3 d-flex justify-content-center ml-auto">
+        <div class="card shadow-sm rounded" style="width: 16rem;">
+          <img src="icone-quiz.jpg" class="card-img-top" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Quizes</h5>
+            <p class="card-text"> Aqui terá a área do quiz para você testa seu conhecimento para o exame de seleção do IFRN!</p>
+            <a href="quiz.html" class="btn btn-primary rounded-pill">Ir para a área do quiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<script src="home.js"></script>
+</body>
+</html>
